@@ -1,8 +1,129 @@
-body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00b7ff;
+body {
+  font: 16px 'Ubuntu', Helvetica, Arial, sans-serif;
+  background: linear-gradient(0deg, rgba(96, 140, 175, 0.7),rgba(96, 140, 175, 0.7)), url(../images/drone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter:blur(6px) ;
+  min-height: 100vh;
+}
+
+a, button {
+  color: #5386a8;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: rgb(29, 29, 29);
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+nav {
+  width: 100vw;
+  margin: 0 0;
+  height: 12vh;
+  background-color: rgb(29, 29, 29);
+
+}
+
+h2 {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.nav-bar {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15%;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  height: 60vh;
+  gap: 15%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:space-around;
+  margin-bottom: 40px;
+  color: #bbd8e4;
+  background-color: rgb(29, 29, 29);
+  padding: 40px;
+  gap: 25px;
+}
+
+.edit-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 60px;
+  gap: 20px;
+}
+
+button {
+  font-family: inherit;
+}
+
+.red-text {
+  color: rgb(165, 60, 60);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 0 auto;
+  align-items: center;
+  gap: 5vh;
+
+}
+
+.form > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form button {
+  margin-top: 50px;
+}
+
+input {
+  width: 70%;
+  padding: 15px;
+  background-color: rgba(14, 14, 14, 0.507);
+  color: #bbd8e4;
+  font-size: 1em;
 }
